@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- Font Awesome -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylepro.css">
+</head>
+<body onload="yes()">
+    <!-- Login page header -->
+    <div id="header"></div>
+    <!-- Login page element -->
+    <div class="container d-flex p-5 mt-4 justify-content-center align-items-center centermainlogin" id="loginbg">
+        <div class="container border border-2 border-dark bg-warning rounded" id="centerlogin" style="width: 70%; height: 400px;">
+            <h3 class="text-center m-3 fw-3"><span class="border m-2 border-3 bg-secondary border-black rounded">LOGIN</span></h3>
+            <!-- Login page form with validation -->
+            <form>
+                <div class="mb-4">
+                    <label for="Email" class="form-label" >E-mail :</label>
+                    <input type="email" class="form-control border border-2 border-dark" required id="Email" aria-describedby="email" placeholder="Enter your email....">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label" >Password :</label>
+                    <input type="password" class="form-control border border-2 border-dark" required id="password" aria-describedby="password" placeholder="************">
+                </div>
+                <div class="mb-4">
+                    <button type="button" onclick="validate()" class="btn btn-secondary border border-2 border-dark d-block w-100 text-black" id="loginbutton">LOGIN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Login page footer -->
+    <div class="m-0 border-3 footerlogin" id="footer" style="border: 3px solid dark;"></div>
+    <script src="action.js"></script>
+</body>
+</html>

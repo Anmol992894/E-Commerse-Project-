@@ -1,0 +1,146 @@
+/* Style for frontpage bg */
+.mainimg{
+    height:530px;
+    width: 100%; 
+    background-image: url("collection-plain-yellow-sweaters-jackets-women-hanging-rack-dressing-room-selective-focus-fashionable-winter-autumn-clothes.jpg");
+    background-size: cover;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.card-img-top {
+    border: 2px solid #FAB301;
+}
+
+/* Dropdown for particular screen width  */
+@media (min-width:600px) {
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+/* Collapse styling */
+.collapsehead{
+    position: absolute;
+    left: 130px;
+    top: 30px;
+}
+
+/* border for the buttons */
+.bord{
+    border: 2px solid black;
+}
+.bord:hover{
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.borderbody{
+    border: 2px solid black;
+
+}
+.headerbutton:hover{
+    background-color: #FAB301;
+    font: white;
+}
+.footerhover:hover{
+    background-color: gray;
+    border-radius:6px;
+}
+
+#navbarSupportedContent{
+    position: static;
+    width: 100%;
+}
+/* Styling for the particular width of device */
+@media (min-width:768px) and (max-width:1023px){
+    .footercontact{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .footerproduct{
+        position: absolute;
+        top:100%;
+        width: 100%;
+    }
+    .footerlogin{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .footercart{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+/* Styling for the particular width of device */
+@media(min-width:768px) and (max-width:918px) and (min-height:1024px) and (max-height:1368px){
+    .footercart{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    #cartrow{
+        position: absolute;
+        top: 250px;
+        width: 100%;
+    }
+
+}
+/* Styling for the particular width of device */
+@media (min-width:1024px) and (max-height:600px){
+    #contactrow{
+        position:absolute;
+        top:30%;
+        margin-top:50px ;
+    }
+    #contactimage{
+        margin: 30px;
+        width:200px ;
+        height: 200px;
+    }
+    #contactform{
+        margin: 30px;
+    }
+    .footerproduct, .footercontact{
+        position: absolute;
+        top:110%;
+        width: 100%;
+    }
+
+}
+/* Styling for the particular width of device */
+@media (min-width:200px) and (max-width:500px){
+    #navbarSupportedContent{
+        font-size: 11px;
+    }
+}
+/* Styling for the particular width of device */
+@media (width:1024px) and (height:1366px){
+    .footerlogin{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }
+    .footercart,.footermenpantsproduct, .footermenhoodieproduct, .footermenshirtproduct, .footerwomenpantsproduct, .footerwomenskirtproduct{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .footercontact{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    #cartrow{
+        position: absolute;
+        top: 270px;
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- Font Awesome -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylepro.css">
+</head>
+<body onload="yes()">
+    <div id="header"></div>
+        <div id="frontpageimage" class="mainimg d-flex-column text-center mt-auto justify-content-end" style="border: 2px solid black;">    
+            <div id="logomainpage" class="mx-auto mt-4" style="width: 200px; height: 200px; ">
+                <img src="fashion.png" width="200px" height="200px">
+            </div>
+            <div>
+                <div class="col d-block mx-5" style="position: relative; top: 20px">
+                    <p class="text-nowrap" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><h4><em>Your First Impression. Is your last Impression. Make your first Impression.</h4></em></p>
+                </div>
+            </div>
+        </div>
+    <!-- Main Page all product crousel -->
+    <div class="container-fluid p-5 bg-light mb-2">
+        <div class="container-fluid mx-auto">
+            <h2 class="text-center fw-3"><span class="border m-2 border-3 bg-secondary border-black rounded" >Hallmark</span></h2>
+        </div>
+        <div class="container mt-5">
+            <div class="carousel slide" id="maincrou" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <!-- For small device -->
+                        <div class="d-flex d-sm-flex d-md-none d-lg-none justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                            <img src="clothes/man-7975389_1280.png" class="card-img-top d-block w-100" alt="White Hoddie">
+                            <div  class="borderbody card-body " style="background-color: #FAB301;">
+                                <h4 class=" card-title text-center">White Hood</h4>
+                                <div class="card-text text-center">$60</div>
+                                <p class=" card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- For Medium device -->
+                        <div class="d-none d-md-flex d-lg-none  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/brownhoodie.jpg" alt="Brown Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Brown Hood</h4>
+                                    <div class="card-title">$40</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/kate-skumen-PJRabkuH3_Q-unsplash.jpg" alt="Purple Skirt" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Purple skirt</h4>
+                                    <div class="card-title">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Large Screen -->
+                        <div class="d-none d-md-none d-lg-flex  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/brownhoodie.jpg" alt="Brown Hood" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Brown Hood</h4>
+                                    <div class="card-title">$40</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/kate-skumen-PJRabkuH3_Q-unsplash.jpg" alt="Purple Skirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Purple skirt</h4>
+                                    <div class="card-text ">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/man-7975389_1280.png" alt="White Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Hood</h4>
+                                    <div class="card-title">$60</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+        
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/terricks-noah-n9R0MN3XGvY-unsplash.jpg" alt="Kids Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Full Outfit</h4>
+                                    <div class="card-title">$40</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height: 550px;">
+                                <img class="card-img-top" src="clothes/nimble-made-N0ke5zChVBU-unsplash.jpg" alt="Grey Shirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Grey Shirt</h4>
+                                    <div class="card-title">$20</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <!-- For small device -->
+                        <div class="d-flex d-sm-flex d-md-none d-lg-none justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                            <img src="clothes/kate-skumen-PJRabkuH3_Q-unsplash.jpg" class="card-img-top d-block w-100" alt="Purple Skirt">
+                            <div  class="borderbody card-body " style="background-color: #FAB301;">
+                                <h4 class=" card-title text-center">Purple Skirt</h4>
+                                <div class="card-text text-center">$10</div>
+                                <p class=" card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- For Medium device -->
+                        <div class="d-none d-md-flex d-lg-none  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/man-7975389_1280.png" alt="White Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Hood</h4>
+                                    <div class="card-title">$60</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/laura-chouette-fmHiaXFXxnQ-unsplash.jpg" alt="Shirt" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Shirt</h4>
+                                    <div class="card-title">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Large Screen -->
+                        <div class="d-none d-md-none d-lg-flex  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/basic-white-shirt-men-s-fashion-apparel-studio-shoot.jpg" alt="White Shirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Shirt</S></h4>
+                                    <div class="card-title">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/businessman-wearing-black-pants-with-white-shirt.jpg" alt="Black Pant" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Black Pant</h4>
+                                    <div class="card-text ">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/janko-ferlic-gjlMT52gy5M-unsplash.jpg" alt="Kid Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Kid Outfit</h4>
+                                    <div class="card-title">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+        
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/laura-chouette-fmHiaXFXxnQ-unsplash.jpg" alt="Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Full Outfit</h4>
+                                    <div class="card-title">$50</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height: 550px;">
+                                <img class="card-img-top" src="clothes/frank-flores-eyFcZLLYvfA-unsplash.jpg" alt="Pant" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Pant</h4>
+                                    <div class="card-title">$20</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <!-- For small device -->
+                        <div class="d-flex d-sm-flex d-md-none d-lg-none justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                            <img src="clothes/janko-ferlic-gjlMT52gy5M-unsplash.jpg" class="card-img-top d-block w-100" alt="Kid Outfit">
+                            <div  class="borderbody card-body " style="background-color: #FAB301;">
+                                <h4 class=" card-title text-center">Kid Outfit</h4>
+                                <div class="card-text text-center">$10</div>
+                                <p class=" card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- For Medium device -->
+                        <div class="d-none d-md-flex d-lg-none  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/vacation-water-man-portrait.jpg" alt="White Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Hood</h4>
+                                    <div class="card-title">$60</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/laura-chouette-fmHiaXFXxnQ-unsplash.jpg" alt="Full Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Full Outfit</h4>
+                                    <div class="card-title">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Large Screen -->
+                        <div class="d-none d-md-none d-lg-flex  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/vacation-water-man-portrait.jpg" alt="Hoddie" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Blue Hood</S></h4>
+                                    <div class="card-title">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/kenzie-kraft-9QW52RyBLao-unsplash.jpg" alt="White Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Outfit</h4>
+                                    <div class="card-text ">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/taylor-smith-TgJoOJGg3TE-unsplash (1).jpg" alt="Kid Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Kid Outfit</h4>
+                                    <div class="card-title">$30</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+        
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/corey-saldana-pIKQbdSzF_k-unsplash.jpg" alt="Skirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Skirt</h4>
+                                    <div class="card-title">$50</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height: 550px;">
+                                <img class="card-img-top" src="clothes/engin-akyurt-5raPrOhbKQo-unsplash.jpg" alt="Pant" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Pant</h4>
+                                    <div class="card-title">$20</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="carousel-item">
+                        <!-- For small device -->
+                        <div class="d-flex d-sm-flex d-md-none d-lg-none justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                            <img src="clothes/engin-akyurt-5raPrOhbKQo-unsplash.jpg" class="card-img-top d-block w-100" alt="Pant">
+                            <div  class="borderbody card-body " style="background-color: #FAB301;">
+                                <h4 class=" card-title text-center">Pant</h4>
+                                <div class="card-text text-center">$10</div>
+                                <p class=" card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- For Medium device -->
+                        <div class="d-none d-md-flex d-lg-none  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/corey-saldana-pIKQbdSzF_k-unsplash.jpg" alt="Shirt" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Shirt</h4>
+                                    <div class="card-title">$60</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button  class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold"> Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/kenzie-kraft-9QW52RyBLao-unsplash.jpg" alt="Full Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Full Outfit</h4>
+                                    <div class="card-title">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Large Screen -->
+                        <div class="d-none d-md-none d-lg-flex  justify-content-center align-items-center">
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/brownhoodie.jpg" alt="Brown Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Brown Hood</h4>
+                                    <div class="card-title">$40</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/kate-skumen-PJRabkuH3_Q-unsplash.jpg" alt="Purple Skirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Purple skirt</h4>
+                                    <div class="card-text ">$10</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/man-7975389_1280.png" alt="White Hoodie" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">White Hood</h4>
+                                    <div class="card-title">$60</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+        
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height:550px;">
+                                <img class="card-img-top" src="clothes/terricks-noah-n9R0MN3XGvY-unsplash.jpg" alt="Kids Outfit" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Full Outfit</h4>
+                                    <div class="card-title">$40</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 200px; height: 550px;">
+                                <img class="card-img-top" src="clothes/nimble-made-N0ke5zChVBU-unsplash.jpg" alt="Grey Shirt" style="height: 15rem;">
+                                <div  class="borderbody card-body d-flex justify-content-center align-items-center flex-column" style="background-color: #FAB301;">
+                                    <h4 class="card-title">Grey Shirt</h4>
+                                    <div class="card-title">$20</div>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-warning bord"><i class="cart fa fa-shopping-cart cart-btn"></i><span class="btn-text fw-bold">Add To Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#maincrou" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#maincrou" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Frontpage footer -->
+    <div class="m-0 border-3" id="footer" style="border: 3px solid dark;"></div>
+    <script src="action.js"></script>
+</body>
+</html>

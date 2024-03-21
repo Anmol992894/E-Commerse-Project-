@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- Font Awesome -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylepro.css">
+</head>
+<body onload="yes()">
+    <!-- Contact header -->
+    <div id="header"></div> 
+    <!-- Contact page begin -->
+        <div class="container-fluid p-3 mt-3 bg-light d-flex-column justify-content-center align-items-center">
+            <!-- Contact Heading  -->
+            <h2 class="text-center fw-3"><span class="border m-2 border-3 bg-secondary border-black rounded">CONTACT US</span></h2>
+            <div class="d-flex p-3 justify-content-center align-items-center">
+                <div class="row mt-5" id="contactrow">
+                    <!-- Contact image  -->
+                    <div class="col">
+                        <img src="clothes/man-7975389_1280.png" id="contactimage" class="img-thumbnail border border-2 border-warning rounded mx-auto d-block" width="auto" height="auto">
+                    </div>
+                    <!-- Contact page form -->
+                    <div class="col ms-3 border border-2 border-warning rounded " id="contactform">
+                        <div class="container mt-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label" >Name :</label>
+                                    <input type="text" class="form-control" required id="name" aria-describedby="name" placeholder="Enter your name....">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label" >E-mail :</label>
+                                    <input type="email" class="form-control" required id="email" aria-describedby="email" placeholder="Enter your email....">
+                                </div>
+                                <div class="mb-3">
+                                   <label for="message" class="form-label" >Message :</label><br>
+                                   <textarea id="message" name="message" rows="3" aria-describedby="message" placeholder="Enter Your message...." style="width: 100%;"></textarea> 
+                                </div>
+                                <div class="mb-3">
+                                    <input type="submit" class="btn-block bg-warning border border-2 border-dark form-control" id ="submit" aria-describedby="submit"> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Contact page footer -->
+    <div class="m-0 footercontact" id="footer" style="border: 3px solid dark;"></div>
+    <script src="action.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylepro.css">
+</head>
+<body onload="yes()">
+    <div id="header"></div>
+    <!-- Cart begin  -->
+        <div class="row p-5 px-0 mt-5" id="cartrow">
+            <!-- Image part of the cart page -->
+            <div class="col-7">
+                <div class="row bg-light border mx-0 m-2 border-3">
+                    <!-- Item side -->
+                    <h2 class="text-center"><span class="rounded">Items In Cart</span></h2>
+                    <hr>
+                    <!-- cart image  -->
+                    <div class="col-6">
+                        <img src="clothes/laura-chouette-fmHiaXFXxnQ-unsplash.jpg" id="contactimage" class=" border border-2 border-warning rounded mx-auto d-block" width="100%" height="80%">
+                    </div>
+                        <div class="col p-0">
+                        <div class="text-center m-2"><h4>Allure</h4></div>
+                        <div class="text-center m-2">$15</div>
+                        <!-- Delete button -->
+                        <div class="text-center m-2"><button class="btn btn-sm border border-2 border-dark bg-secondary" type="button"><img src="delete.png" id="deletebutton" width="30px" height="30px"></button></div>
+                    </div>
+                    <!-- Form for cart increment and decrement -->
+                    <div class="col">
+                        <div class="row" style="width: 100%;">
+                            <!-- Decrement button -->
+                            <div class="col-3 col-md-4"><button onclick="decrement()" class="btn btn-sm border border-2 border-dark bg-secondary form-control text-center w-100" type="button" ><img src="minus.png" class="mx-auto" id="minus" width="10px" height="10px"></button></div>
+                            <!-- Input field -->
+                            <div class="col-6 col-md-4"><input type="number" id="quantity" aria-describedby="quantity" class="mx-auto border border-2 border-dark text-start rounded" style="width: 40px;"></div>
+                            <!-- Increment button -->
+                            <div class="col-3 col-md-4"><button onclick="increment()" class="btn btn-sm border border-2 border-dark bg-secondary form-control text-center w-100" type="button"><img src="plus.png" id="plus" class="mx-auto" width="10px" height="10px"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart card -->
+            <div class="col-5">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Summary</h2>
+                    </div>
+                    <div class="card-body">
+                        <div>Cost <span class="float-end">$15</span></div>
+                        <div><pre>Shipping<span class="float-end">$5</span></div>  
+                        <hr>
+                        <div><strong>Total</strong>   <span class="float-end">$20</span></div>                  
+                    </div>
+                    <div class="card-footer text-center">
+                    <button class="btn btn-sm btn-secondary border border-2 border-dark">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- alert that will be visible after certain condition and will disappear after the 2 sec -->
+    <div id="alertcontain"><div id="alert"></div></div>
+    <!-- Dynamic cart footer -->
+    <div class="m-0 border-3 footercart" id="footer" style="border: 3px solid dark;"></div>
+    <script src="action.js"></script>
+</body>
+</html>
